@@ -1,14 +1,20 @@
 {
-  "extends": "standard-with-typescript",
+  "extends": [
+    "standard-with-typescript",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/method-signature-style": "off",
     "@typescript-eslint/return-await": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/no-namespace": "off",
-    "import/export": "off"
+    "import/export": "off",
+    "prettier/prettier": "error"
   }
 }
