@@ -1,3 +1,7 @@
+import 'module-alias/register';
+
+import '../config/module-alias';
+
 import express from 'express';
 import mongoose from 'mongoose';
 import * as dotenv from 'dotenv';

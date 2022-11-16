@@ -2,20 +2,22 @@ version: '3'
 
 services:
   mongo:
+    container_name: node.mongodb
     image: mongo:4.4.1
     restart: always
     volumes:
-      - mongodb:/data/db
+      - node.mongodb:/data/db
     ports:
       - '27017:27017'
   api:
+    container_name: node.api
     build: .
     env_file: ./.env
     restart: always
     environment:
       - MONGO_URL=$MONGO_URL
     volumes:
-      - .:/home/node/app
+      - .:/home/node/app:z
     ports:
       - $PORT:$PORT
       - '9222:9222'
@@ -24,4 +26,4 @@ services:
     links:
       - mongo
 volumes:
-  mongodb:
+  node.mongodb:
