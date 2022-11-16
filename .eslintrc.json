@@ -14,6 +14,8 @@
     "@typescript-eslint/return-await": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-misused-promises": "off",
     "import/export": "off",
     "prettier/prettier": "error"
   }
