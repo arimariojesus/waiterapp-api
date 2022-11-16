@@ -68,6 +68,7 @@
   "dependencies": {
     "@faker-js/faker": "^7.3.0",
     "bson-objectid": "^2.0.3",
+    "dotenv": "^16.0.3",
     "express": "^4.17.3",
     "module-alias": "^2.2.2",
     "mongodb": "^4.4.1",
