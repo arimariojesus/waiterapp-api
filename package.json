@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev --poll --respawn --transpile-only --ignore-watch './node_modules' ./src/server/index.ts",
     "dev:docker": "docker-compose -f docker-compose.yml up",
-    "start": "node dist/main/server.js",
+    "start": "node dist/server/index.js",
     "build": "rimraf dist && tsc -p tsconfig-build.json",
     "postbuild": "copyfiles -u 1 public/**/* dist/static",
     "debug": "ts-node-dev --inspect=0.0.0.0:9222 --nolazy ./src/server/index.ts",
