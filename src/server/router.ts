@@ -9,6 +9,7 @@ import {
   createProduct,
   listProductsByCategory,
   listOrders,
+  createOrder,
 } from '@/app/useCases';
 
 export const router = Router();
@@ -43,3 +44,6 @@ router.get('/categories/:categoryId/products', listProductsByCategory);
 
 // List orders
 router.get('/orders', listOrders);
+
+// Create order
+router.post('/orders', createOrder);
