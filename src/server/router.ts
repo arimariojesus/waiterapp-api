@@ -8,6 +8,7 @@ import {
   listProducts,
   createProduct,
   listProductsByCategory,
+  listOrders,
 } from '@/app/useCases';
 
 export const router = Router();
@@ -39,3 +40,6 @@ router.post('/products', upload.single('image'), createProduct);
 
 // Get products by category
 router.get('/categories/:categoryId/products', listProductsByCategory);
+
+// List orders
+router.get('/orders', listOrders);
