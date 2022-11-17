@@ -2,7 +2,12 @@ import path from 'node:path';
 import { Router } from 'express';
 import multer from 'multer';
 
-import { listCategories, createCategory, listProducts } from '@/app/useCases';
+import {
+  listCategories,
+  createCategory,
+  listProducts,
+  createProduct,
+} from '@/app/useCases';
 
 export const router = Router();
 
@@ -27,3 +32,6 @@ router.post('/categories', createCategory);
 
 // List products
 router.get('/products', listProducts);
+
+// Create product
+router.post('/products', upload.single('image'), createProduct);
