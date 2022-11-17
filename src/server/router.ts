@@ -10,6 +10,7 @@ import {
   listProductsByCategory,
   listOrders,
   createOrder,
+  changeOrderStatus,
 } from '@/app/useCases';
 
 export const router = Router();
@@ -47,3 +48,11 @@ router.get('/orders', listOrders);
 
 // Create order
 router.post('/orders', createOrder);
+
+// Change order status
+router.patch('/orders/:orderId', changeOrderStatus);
+
+// Delete/cancel order
+router.delete('/orders/:orderId', (req, res) => {
+  res.send('OK');
+});
