@@ -36,7 +36,7 @@ This project was developed with the following technologies:
 #### Prerequisites
 
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/) >= 16.x
 - [Docker and Docker-Compose](https://docs.docker.com/engine/install/)
 
 ```bash
