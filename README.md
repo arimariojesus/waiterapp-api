@@ -1,4 +1,4 @@
-![WAITERAPP BANNER](./.docker/banner.png)
+![WAITERAPP BANNER](./.github/banner.png)
 
 <p align="center">
   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
