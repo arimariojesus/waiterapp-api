@@ -16,6 +16,8 @@
 
 WaiterApp is a platform for managing and tracking orders in restaurants and bars. The platform consists of a mobile app for the waiter, where it is possible to enter orders per table, a website for managers or assistants where it is possible to control and monitor orders in real time.
 
+| project based on [Mateus Silva's](https://github.com/maateusilva) OPJS week
+
 ### Tecnologies
 
 This project was developed with the following technologies:
