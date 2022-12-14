@@ -57,7 +57,7 @@ Your server will be online on host http://localhost:3333
 
 ### License
 
-Distributed under the MIT License. See LICENSE for more informations.
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more informations.
 
 ---
 
